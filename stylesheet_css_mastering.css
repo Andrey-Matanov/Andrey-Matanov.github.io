@@ -1,8 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    min-width: 1000px;
-    font-family: Arial;
+    font-family: Arial, serif;
 }
 
 a {
@@ -25,8 +24,29 @@ h3 {
     font-size: 30px;
 }
 
+
+hr {
+    border: none; /* Убираем границу для браузера Firefox */
+    color: #26354e; /* Цвет линии для остальных браузеров */
+    background-color: #26354e; /* Цвет линии для браузера Firefox и Opera */
+    height: 1px; /* Толщина линии */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+
+li {
+    list-style: none;
+}
+
+
 .fixed-container {
-    width: 960px;
+    max-width: 1000px;
+    min-width: 320px;
+    padding: 0 20px;
     margin: 0 auto;
 }
 
@@ -39,39 +59,65 @@ h3 {
 
 #black-bar a {
     color: white;
+    border-bottom: 1px solid white;
 }
 
 .datetime {
     float: right;
 }
 
-#header {
-    margin-top: 34px;
-    height: 97px;
-    margin-bottom: 34px;
-}
-
-#header-top {
-    position: relative;
-    height: 40px;
+header {
+    padding-top: 40px;
+    height: 50px;
     margin-bottom: 42px;
+    color: #91919f;
 }
 
 #header-top-left {
-    display: inline-block;
+    float: left;
+}
+
+#header-logo {
+    margin-right: 60px;
+
+}
+
+#weather-of-city {
+    padding-bottom: 7px;
 }
 
 #header-top-right {
-    display: inline-block;
     float: right;
+
 }
 
-#header-bottom {
-    font-size: 13px;
+#header-top-right img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header-top-right p {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#site-search {
+    font-size: 14px;
+    width: 320px;
+    height: 45px;
+    border: none;
+    border-radius: 23px;
+    background-color: #ebebeb;
+    padding-left: 21px;
+    margin-left: 47px;
+    outline: none;
+}
+
+nav {
     margin-bottom: 42px;
 }
 
-#header-bottom a {
+nav a {
     margin-right: 10px;
     color: black;
 }
@@ -109,7 +155,7 @@ h3 {
 }
 
 .news-item {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
 }
 
 .news-item-content {
@@ -286,7 +332,6 @@ h3 {
 }
 
 footer {
-    height: 338px;
     background-color: #00122f;
     color: white;
     padding-top: 57px;
@@ -300,33 +345,50 @@ footer a {
     height: 190px;
 }
 
-#footer-menu-left {
-    width: 193px;
+#footer-menu {
     float: left;
+    width: 250px;
+    margin-right: 170px;
 }
 
-#footer-menu-left a {
-    display: inline-block;
-}
-
-#footer-menu-right a {
-    display: inline-block;
-}
-
-#about-us a {
-    display: inline-block;
+#footer-menu-left {
+    float: left;
 }
 
 #footer-menu-right {
-    width: 290px;
-    float: left;
+    float: right;
 }
 
 #about-us {
     float: left;
-    width: 200px;
 }
 
 #contacts {
     float: right;
+}
+
+#contacts p img {
+    margin-right: 20px;
+}
+
+#social-networks {
+    margin-bottom: 40px;
+}
+
+#social-networks img {
+    margin-right: 20px;
+}
+
+#social-networks a:hover {
+    border-bottom: none;
+}
+
+#footer-br {
+    color: #26354e;
+}
+
+#footer-bottom {
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
 }
