@@ -50,6 +50,10 @@ li {
     margin: 0 auto;
 }
 
+#back-to-portfolio {
+    font-size: 10px;
+}
+
 #black-bar {
     background-color: black;
     color: white;
@@ -391,4 +395,22 @@ footer a {
     padding: 20px 0 20px 0;
     text-align: center;
     color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 540px) {
+    .datetime {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #black-bar {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) {
+    #black-bar {
+        font-size: 12px;
+    }
 }

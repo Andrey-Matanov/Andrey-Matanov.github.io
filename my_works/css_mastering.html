@@ -1,31 +1,20 @@
-<!--
-Возможные улучшения:
--Страница при переходе по рекламному баннеру, на которой написано "Здесь могла бы быть ваша реклама... но ее
-тут не будет :( Через 5 секунд вернем вас назад"; количество секунд можно закодировать на смену до 0;
--Сделать футер, как на макете, но добавить информацию о себе
--Закодировать время
--Закодировать погоду
--Закодировать все ссылки с target="_blank" в соответствии с новым стандартом безопасности
--Проверить код кнопки "Все новости" (понять как ее правильно центрировать, и мб что-то еще)
--Заменить logo хедера и футера: оставить только саму картинку, а текст убрать
--->
 
 <!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=320, initial-scale=1">
     <title>Новостное агентство</title>
     <link rel="stylesheet" href="stylesheet_css_mastering.css">
-    <!--
-    <script src="Learning/Новая%20папка%20(5)/JQuery/jquery-3.5.1.min.js"></script>
-    <script src="jquerry.js"></script>
-    -->
+    <script src="jquery-3.5.1.min.js"></script>
+    <!--<script src="script.js"></script>-->
+    <script src="clock.js"></script>
 </head>
 <body>
 <div id="black-bar">
     <div class="fixed-container">
         Самые <a href="#">свежие новости</a> в реальном времени
-        <div id="clock" class="datetime">18:33 18.06.2020</div>
+        <div id="clock" class="datetime"></div>
     </div>
 </div>
 <header>
@@ -65,7 +54,7 @@
                     <div class="news-item-props">
                         <a href="#">/ ЧМ по футболу</a>
                         <div class="news-time">10:48</div>
-                        <div class="news-comments-count">15</div>
+                        <div class="news-comments-count">10</div>
                     </div>
                 </div>
                 <div class="news-item">
@@ -105,7 +94,7 @@
                     <div class="news-item-props">
                         <a href="#">/ Транспорт</a>
                         <div class="news-time">10:48</div>
-                        <div class="news-comments-count">15</div>
+                        <div class="news-comments-count">30</div>
                     </div>
                 </div>
                 <div class="news-item">
@@ -115,10 +104,11 @@
                     <div class="news-item-props">
                         <a href="#">/ ЧМ по футболу</a>
                         <div class="news-time">10:48</div>
-                        <div class="news-comments-count">15</div>
+                        <div class="news-comments-count">21</div>
                     </div>
                 </div>
                 <a href="#" class="all-news-button">Все новости</a>
+                <!--<button id="changeButton">Change</button>-->
             </div>
         </div>
         <div id="central-column">
