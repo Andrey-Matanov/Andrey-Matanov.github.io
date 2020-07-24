@@ -1,0 +1,174 @@
+/* html-tags */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* сontainer */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* .nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    padding: 5px;
+    border: 1px solid #1F3F68;
+    background-color: orange;
+}
+
+.nav a:hover {
+    background-color: #1F3F68;
+    color: orange;
+}
+
+/* contact-us */
+
+.contact-us {
+    margin-bottom: 20px;
+    background-color: lightblue;
+}
+
+.contact-us-text {
+    text-align: center;
+}
+
+/* contacts */
+
+.contacts {
+    margin-bottom: 20px;
+    float: left;
+}
+
+.contacts-heading {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* contact-form */
+
+.contact-form {
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    float: right;
+}
+
+.contact-form .fourth-level-heading {
+    margin: 0 0 10px 0;
+}
+
+.form-unit {
+    margin-bottom: 10px;
+}
+
+.form-unit-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-submit {
+    width: 90%;
+}
+
+/* map */
+
+.where-can-you-find-us {
+    clear: both;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* footer */
+
+.footer {
+    background-color: #FF6A01;
+    color: #1F3F68;
+}
+
+.footer-content {
+    margin-bottom: 30px;
+}
+
+.footer-content-heading {
+    width: 495px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-content-text {
+    width: 395px;
+    opacity: 75%;
+}
+
+.footer-contacts {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    opacity: 75%;
+}
+
+/* other classes */
+
+.third-level-heading {
+    font-size: 36px;
+    text-align: center;
+}
+
+.fourth-level-heading {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+.input {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    outline: none;
+}
+
+.submit {
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
