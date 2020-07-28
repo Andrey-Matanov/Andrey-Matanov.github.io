@@ -2,7 +2,7 @@
 alert("Задание № 1.");
 
 let celciusT = prompt("Введите температуру в градусах по Цельсию: ");
-let farenheitT = (9 / 5) * celciumT + 32;
+let farenheitT = (9 / 5) * celciusT + 32;
 
 alert("Перевод температуры в градусы по Фаренгейту: " + farenheitT);
 
