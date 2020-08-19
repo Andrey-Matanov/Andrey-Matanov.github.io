@@ -4,11 +4,19 @@
 }
 
 body {
-    margin: 0 20px;
+    max-width: 1500px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
 }
 
 .main-heading {
-    text-align: center;
+    background-color: lightgrey;
+    border-bottom: 5px solid #000;
     margin-bottom: 20px;
 }
 
@@ -38,6 +46,10 @@ body {
     display: block;
     margin: 0 auto;
 }
+
+/* .shop-range-item-image:hover {
+    opacity: 0.7;
+} */
 
 .shop-range-item-price {
     background-color: grey;
@@ -70,23 +82,52 @@ body {
 .basket-list-main {
     min-width: 400px;
     padding: 10px;
-    border: 3px solid rgb(195, 195, 195);
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.basket-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.basket-list-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .basket-list-text {
-    line-height: 35px;
+    font-size: 30px;
 }
 
 .basket-list-item {
     line-height: 20px;
 }
 
-.basket-price-text {
-    line-height: 35px;
+.list-item-figure {
+    width: 30%;
 }
 
-.basket-price-message {
-    margin-top: 20px;
+.list-item-delete {
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.list-item-delete:hover {
+    cursor: pointer;
+}
+
+.basket-price-text {
+    line-height: 35px;
+    font-size: 24px;
 }
 
 .button {
