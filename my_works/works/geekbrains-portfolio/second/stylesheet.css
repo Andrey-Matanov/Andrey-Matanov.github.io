@@ -1165,9 +1165,10 @@ button:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
   }
   .services-item {
-    width: 50%;
+    width: 55%;
     margin-bottom: 2em;
   }
   .services-item::after {
@@ -1233,6 +1234,9 @@ button:hover {
   .latest-projects-project {
     width: 80%;
   }
+  .video-presentation-heading {
+    text-align: center;
+  }
   .waxom-mobile {
     padding-bottom: 3em;
   }
@@ -1240,7 +1244,7 @@ button:hover {
     display: none;
   }
   .waxom-mobile-features {
-    padding-left: 40px;
+    padding-left: 40px !important;
   }
   .counters {
     padding-top: 4em;
@@ -1307,6 +1311,8 @@ button:hover {
   }
   .footer-bottom-left-text {
     border: none;
+    margin: 0;
+    padding: 0;
   }
   .footer-bottom-right-column {
     -webkit-box-orient: vertical;
@@ -1316,6 +1322,8 @@ button:hover {
   }
   .footer-bottom-right-text {
     border: none;
+    margin: 0;
+    padding: 0;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */

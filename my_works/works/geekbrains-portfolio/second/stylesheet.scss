@@ -2,15 +2,9 @@
 
 //// 1) font-family
 
-$Raleway: 'Raleway',
-Arial,
-sans-serif;
-$Roboto: 'Roboto',
-Arial,
-sans-serif;
-$Montserrat: 'Montserrat',
-Arial,
-sans-serif;
+$Raleway: 'Raleway', Arial, sans-serif;
+$Roboto: 'Roboto', Arial, sans-serif;
+$Montserrat: 'Montserrat', Arial, sans-serif;
 
 //// 2) color
 
@@ -770,7 +764,6 @@ button:hover {
         border-radius: 3px 3px 0 0;
         background-color: #363636;
         color: white;
-        ;
         font-size: 24px;
         line-height: 20px;
     }
@@ -1144,19 +1137,19 @@ button:hover {
 
         &-left-arrow,
         &-right-arrow {
-            display: none
+            display: none;
         }
     }
 
     .services {
-
         &-flexbox {
             flex-direction: column;
             align-items: center;
+            text-align: center;
         }
 
         &-item {
-            width: 50%;
+            width: 55%;
             margin-bottom: 2em;
         }
 
@@ -1166,7 +1159,6 @@ button:hover {
     }
 
     .waxom-is {
-
         &-images {
             width: 100%;
         }
@@ -1213,7 +1205,6 @@ button:hover {
     }
 
     .latest-projects {
-
         &-description {
             width: 100%;
         }
@@ -1233,6 +1224,12 @@ button:hover {
         }
     }
 
+    .video-presentation {
+        &-heading {
+            text-align: center;
+        }
+    }
+
     .waxom-mobile {
         padding-bottom: 3em;
 
@@ -1241,7 +1238,7 @@ button:hover {
         }
 
         &-features {
-            padding-left: 40px;
+            padding-left: 40px !important;
         }
     }
 
@@ -1259,7 +1256,6 @@ button:hover {
     }
 
     .recent-posts {
-
         &-description {
             width: 100%;
         }
@@ -1271,7 +1267,6 @@ button:hover {
     }
 
     .partners {
-
         &-wrapper {
             flex-direction: column;
         }
@@ -1282,7 +1277,6 @@ button:hover {
     }
 
     .footer {
-
         &-top-wrapper {
             padding: 6em 0;
             width: 50%;
@@ -1314,6 +1308,8 @@ button:hover {
 
         &-bottom-left-text {
             border: none;
+            margin: 0;
+            padding: 0;
         }
 
         &-bottom-right-column {
@@ -1322,6 +1318,8 @@ button:hover {
 
         &-bottom-right-text {
             border: none;
+            margin: 0;
+            padding: 0;
         }
     }
 }
