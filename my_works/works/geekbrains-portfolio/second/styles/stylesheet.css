@@ -1,3 +1,57 @@
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url("../../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 300;
+  src: url("../../fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 200;
+  src: url("../../fonts/Montserrat/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  src: url("../../fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 500;
+  src: url("../../fonts/Raleway/Raleway-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 600;
+  src: url("../../fonts/Raleway/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  src: url("../../fonts/Raleway/Raleway-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 800;
+  src: url("../../fonts/Raleway/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+}
+
 .h2-heading, .h2-white-heading, .slider-first-heading, .slider-second-heading, .services-item-heading, .text-box-heading, .footer-column-heading {
   font-family: "Raleway", Arial, sans-serif;
   line-height: 1.2;
@@ -8,7 +62,7 @@
   font-weight: 300;
 }
 
-.header-menu-link:hover, .header-button:hover .header-button-icon, .slider-arrow:hover, .slider-get-started-button:hover, .services-item:hover .services-item-image-path, .services-item:hover .services-item-heading, .services-item:hover:after, .text-box-button:hover, .latest-projects-category:hover, .latest-projects-project:hover .latest-projects-buttons, .latest-projects-project:hover .latest-projects-project-text, .latest-projects-project:hover .latest-projects-project-text::before, .latest-projects-project:hover .latest-projects-project-title, .latest-projects-project:hover .latest-projects-project-description, .latest-projects-button:hover .latest-projects-button-icon, .latest-projects-load-more-button:hover, .recent-posts-post:hover .recent-posts-day, .recent-posts-post:hover .recent-posts-month, .recent-posts-post:hover .recent-posts-post-text, .recent-posts-post:hover .recent-posts-post-title, .recent-posts-post:hover .recent-posts-post-description, .recent-posts-button:hover, .footer-recent-post:hover .footer-recent-post-description, .footer-recent-post:hover .footer-recent-post-date, .footer-our-twitter-tweet:hover .footer-tweet-content, .footer-our-twitter-tweet:hover .footer-tweet-when, .footer-gray-link:hover {
+.header-menu-link:hover, .header-button:hover .header-button-icon, .header-search-window-opened, .slider-arrow:hover, .slider-get-started-button:hover, .services-item:hover .services-item-image-path, .services-item:hover .services-item-heading, .services-item:hover:after, .text-box-button:hover, .latest-projects-category:hover, .latest-projects-project:hover .latest-projects-buttons, .latest-projects-project:hover .latest-projects-project-text, .latest-projects-project:hover .latest-projects-project-text::before, .latest-projects-project:hover .latest-projects-project-title, .latest-projects-project:hover .latest-projects-project-description, .latest-projects-button:hover .latest-projects-button-icon, .latest-projects-load-more-button:hover, .video-presentation-play-icon:hover .video-presentation-icon, .recent-posts-post:hover .recent-posts-day, .recent-posts-post:hover .recent-posts-month, .recent-posts-post:hover .recent-posts-post-text, .recent-posts-post:hover .recent-posts-post-title, .recent-posts-post:hover .recent-posts-post-description, .recent-posts-button:hover, .footer-recent-post:hover .footer-recent-post-description, .footer-recent-post:hover .footer-recent-post-date, .footer-our-twitter-tweet:hover .footer-tweet-post-link, .footer-our-twitter-tweet:hover .footer-tweet-when, .footer-gray-link:hover {
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
 }
@@ -92,7 +146,7 @@ button:hover {
 }
 
 .header-menu-link {
-  font-family: "Montserrat", Arial, sans-serif;
+  font-family: "Montserrat";
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
@@ -127,8 +181,8 @@ button:hover {
 }
 
 .header-search-window {
-  width: 0;
-  height: 0;
+  height: 0px;
+  width: 0px;
   border: none;
   outline: none;
   position: absolute;
@@ -136,11 +190,9 @@ button:hover {
   left: -145px;
 }
 
-.header-search-window:focus {
+.header-search-window-opened {
   height: 20px;
   width: 200px;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
 }
 
 .header-burger-menu {
@@ -233,6 +285,8 @@ button:hover {
   color: white;
   border-radius: 3px;
   border: none;
+  -webkit-box-shadow: inset 0px -3px 0 0 #736357;
+          box-shadow: inset 0px -3px 0 0 #736357;
 }
 
 .slider-get-started-button:hover {
@@ -425,6 +479,8 @@ button:hover {
   border-radius: 3px;
   border: none;
   color: white;
+  -webkit-box-shadow: inset 0px -3px 0 0 #736357;
+          box-shadow: inset 0px -3px 0 0 #736357;
 }
 
 .text-box-button:hover {
@@ -568,6 +624,8 @@ button:hover {
   line-height: 23px;
   font-weight: 800;
   color: #ffffff;
+  -webkit-box-shadow: inset 0px -3px 0 0 #736357;
+          box-shadow: inset 0px -3px 0 0 #736357;
 }
 
 .latest-projects-load-more-button:hover {
@@ -579,9 +637,9 @@ button:hover {
 /* video-presentation-section */
 .video-presentation {
   padding: 210px 0;
+  background-color: #323438;
   background: url(../assets/video-presentation-section/video-presentation-bg.png);
   background-size: cover;
-  background-color: black;
 }
 
 .video-presentation-wrapper {
@@ -607,6 +665,10 @@ button:hover {
   border: 15px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
   display: block;
+}
+
+.video-presentation-play-icon:hover .video-presentation-icon {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .video-presentation-heading {
@@ -680,7 +742,7 @@ button:hover {
 }
 
 .counters-wrapper {
-  padding: 69px 0 92px 0;
+  padding: 69px 0 92px 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -892,6 +954,7 @@ button:hover {
 /* partners-section */
 .partners {
   padding: 140px 0;
+  background-color: #444446;
   background: url(../assets/partners-section/partners_bg.jpg);
   background-size: cover;
 }
@@ -986,6 +1049,10 @@ button:hover {
   padding: 0;
 }
 
+.footer-recent-post-link {
+  text-decoration: none;
+}
+
 .footer-recent-post-date {
   font-size: 12px;
   line-height: 20px;
@@ -1005,7 +1072,7 @@ button:hover {
   margin-bottom: 17px;
 }
 
-.footer-our-twitter-tweet:hover .footer-tweet-content {
+.footer-our-twitter-tweet:hover .footer-tweet-post-link {
   color: #c7b299;
 }
 
@@ -1024,6 +1091,11 @@ button:hover {
   line-height: 20px;
   color: #555555;
   margin-bottom: 11px;
+}
+
+.footer-tweet-post-link {
+  color: #555555;
+  text-decoration: none;
 }
 
 .footer-tweet-link {
@@ -1128,7 +1200,8 @@ button:hover {
 /* media */
 @media screen and (max-width: 1170px) {
   .wrapper {
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1140,8 +1213,45 @@ button:hover {
   .header-slider-wrapper {
     padding-bottom: 15em;
   }
+  .header {
+    position: relative;
+  }
   .header-menu-and-buttons {
     display: none;
+  }
+  .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-search-icon {
+    position: relative;
+    z-index: 10;
+  }
+  .header-search-window {
+    top: 25px;
+    left: -5px;
+    background-color: gray;
+  }
+  .header-search-window:focus {
+    height: 29px;
+    width: 118px;
+    padding: 5px 0 5px 30px;
+    -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+  }
+  .header-search-window {
+    display: block;
   }
   .header-burger-menu {
     display: -webkit-box;
@@ -1159,6 +1269,22 @@ button:hover {
     width: 60px;
     padding: 17px;
   }
+  .header-burger-menu-opened {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 20px;
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    top: 70px;
+  }
   .header-burger-menu-span {
     width: 100%;
     border: 2px solid white;
@@ -1170,10 +1296,10 @@ button:hover {
     margin-bottom: 4em;
   }
   .slider-first-heading {
-    font-size: 30px;
+    font-size: 20px;
   }
   .slider-second-heading {
-    font-size: 40px;
+    font-size: 26px;
     margin-bottom: 1em;
   }
   .slider-text-and-arrows {
