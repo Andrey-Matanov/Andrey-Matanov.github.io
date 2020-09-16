@@ -79,6 +79,7 @@
         color: white;
         border-radius: 3px;
         border: none;
+        box-shadow: $button-shadow;
     }
 
     &-get-started-button:hover {

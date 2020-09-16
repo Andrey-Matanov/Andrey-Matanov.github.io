@@ -15,7 +15,7 @@
 
     &-menu {
         &-link {
-            font-family: $Montserrat;
+            font-family: "Montserrat";
             font-size: 14px;
             line-height: 1.2;
             font-weight: 300;
@@ -49,18 +49,18 @@
     }
 
     &-search-window {
-        width: 0;
-        height: 0;
+        height: 0px;
+        width: 0px;
         border: none;
         outline: none;
         position: absolute;
         top: 30px;
         left: -145px;
 
-        &:focus {
+        &-opened {
+            @extend %transitionDuration;
             height: 20px;
             width: 200px;
-            transition-duration: 0.3s;
         }
     }
 
