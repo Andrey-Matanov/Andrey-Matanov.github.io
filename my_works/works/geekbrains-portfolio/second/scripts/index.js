@@ -10,7 +10,6 @@ button.addEventListener('click', () => {
 
 header_button.addEventListener('click', () => {
     search_window.classList.toggle('header-search-window-opened');
-    search_window.focus();
 })
 
 search_window.addEventListener('blur', () => {
