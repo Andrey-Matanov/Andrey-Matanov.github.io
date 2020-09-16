@@ -1,0 +1,46 @@
+/* video-presentation-section */
+
+.video-presentation {
+    padding: 210px 0;
+    background: url(../assets/video-presentation-section/video-presentation-bg.png);
+    background-size: cover;
+    background-color: black;
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-button {
+        background: transparent;
+        border: none;
+        margin-bottom: 44px;
+    }
+
+    &-play-icon {
+        border: 15px solid rgba($color: #000000, $alpha: 0.2);
+        border-radius: 50%;
+        display: block;
+    }
+
+    &-heading {
+        color: white;
+        font-weight: 500;
+        margin-bottom: 29px;
+    }
+
+    &-description {
+        @extend %text;
+        width: 50%;
+        line-height: 28px;
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &-duration {
+        font-family: $Montserrat;
+        color: $link-text;
+    }
+}

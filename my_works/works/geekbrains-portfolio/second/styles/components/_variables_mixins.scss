@@ -1,0 +1,37 @@
+// variables
+
+//// 1) font-family
+
+$Raleway: 'Raleway',
+Arial,
+sans-serif;
+$Roboto: 'Roboto',
+Arial,
+sans-serif;
+$Montserrat: 'Montserrat',
+Arial,
+sans-serif;
+
+//// 2) color
+
+$link-text: #c7b299;
+
+//// 3) length
+
+$wrapper-max-width: 1170px;
+
+// inheritance
+
+%headings {
+    font-family: $Raleway;
+    line-height: 1.2;
+}
+
+%text {
+    font-family: $Montserrat;
+    font-weight: 300;
+}
+
+%transitionDuration {
+    transition-duration: 0.4s;
+}

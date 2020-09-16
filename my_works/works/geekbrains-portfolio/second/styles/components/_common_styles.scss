@@ -1,0 +1,43 @@
+/* common styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.wrapper {
+    max-width: $wrapper-max-width;
+    margin: 0 auto;
+}
+
+.h2-heading {
+    @extend %headings;
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.h2-white-heading {
+    @extend %headings;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.link-span {
+    color: $link-text;
+}

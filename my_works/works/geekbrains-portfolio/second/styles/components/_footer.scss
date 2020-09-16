@@ -1,0 +1,216 @@
+/* footer */
+
+.footer {
+    &-top-background {
+        background-color: #191919;
+    }
+
+    &-top-wrapper {
+        padding: 80px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-column {
+        flex-basis: 23%;
+    }
+
+    &-left-column-heading {
+        margin-bottom: 30px;
+    }
+
+    &-column-heading {
+        @extend %headings;
+        padding-top: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 45px;
+    }
+
+    &-product-description {
+        @extend %text;
+        font-size: 14px;
+        line-height: 24px;
+        color: #555555;
+        margin-bottom: 33px;
+    }
+
+    &-product-read-more-button {
+        background-color: #191919;
+        border: none;
+        font-family: $Montserrat;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #d1d1d1;
+        position: relative;
+    }
+
+    &-product-read-more-button::before {
+        position: absolute;
+        left: 80px;
+        top: 6px;
+        content: '';
+        border: 5px solid transparent;
+        border-left: 4px solid white;
+    }
+
+    &-recent-post {
+        padding-bottom: 20px;
+        border-bottom: 2px solid #252525;
+        margin-bottom: 20px;
+    }
+
+    &-recent-post:hover &-recent-post-description {
+        @extend %transitionDuration;
+        color: $link-text;
+    }
+
+    &-recent-post:hover &-recent-post-date {
+        @extend %transitionDuration;
+        color: white;
+    }
+
+    &-recent-post:last-child {
+        margin-bottom: 0px;
+        border: none;
+        padding: 0;
+    }
+
+    &-recent-post-date {
+        @extend %text;
+        font-size: 12px;
+        line-height: 20px;
+        color: #363636;
+        margin-bottom: 10px;
+    }
+
+    &-recent-post-description {
+        @extend %text;
+        font-size: 14px;
+        line-height: 20px;
+        color: #555555;
+    }
+
+    &-our-twitter-tweet {
+        padding-bottom: 23px;
+        border-bottom: 2px solid #252525;
+        margin-bottom: 17px;
+    }
+
+    &-our-twitter-tweet:hover &-tweet-content {
+        @extend %transitionDuration;
+        color: $link-text;
+    }
+
+    &-our-twitter-tweet:hover &-tweet-when {
+        @extend %transitionDuration;
+        color: white;
+    }
+
+    &-our-twitter-tweet:last-child {
+        margin-bottom: 0px;
+        border: none;
+        padding: 0;
+    }
+
+    &-tweet-content {
+        @extend %text;
+        font-size: 14px;
+        line-height: 20px;
+        color: #555555;
+        margin-bottom: 11px;
+    }
+
+    &-tweet-link {
+        text-decoration: none;
+    }
+
+    &-tweet-link-text {
+        color: #959595;
+    }
+
+    &-tweet-to {
+        color: #00bff3;
+    }
+
+    &-tweet-when {
+        font-family: $Montserrat;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 300;
+        color: #363636;
+    }
+
+    &-widget-column-images {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    &-widget-image {
+        display: block;
+    }
+
+    &-bottom-background {
+        background-color: #111111;
+    }
+
+    &-bottom-wrapper {
+        @extend %text;
+        padding: 45px 0 52px 0;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        line-height: 20px;
+        color: #555555;
+    }
+
+    &-bottom-left-column {
+        display: flex;
+    }
+
+    &-bottom-left-text {
+        padding-right: 10px;
+        border-right: 1px solid #1e1e1e;
+        margin-right: 10px;
+    }
+
+    &-bottom-left-text:last-child {
+        padding-right: 0;
+        border-right: none;
+        margin-right: 0;
+    }
+
+    &-bottom-right-column {
+        display: flex;
+    }
+
+    &-bottom-right-text {
+        padding-right: 10px;
+        border-right: 1px solid #1e1e1e;
+        margin-right: 10px;
+    }
+
+    &-bottom-right-text:last-child {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+    }
+
+    &-white-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    &-gray-link {
+        text-decoration: none;
+        color: gray;
+    }
+
+    &-gray-link:hover {
+        @extend %transitionDuration;
+        color: $link-text;
+    }
+}

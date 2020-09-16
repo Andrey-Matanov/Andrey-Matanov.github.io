@@ -1,0 +1,90 @@
+/* slider-section */
+
+.slider {
+    position: relative;
+    text-align: center;
+    margin-bottom: 330px;
+
+    &-first-heading {
+        @extend %headings;
+        font-size: 36px;
+        font-weight: 500;
+        color: white;
+        margin-bottom: 14px;
+    }
+
+    &-second-heading {
+        @extend %headings;
+        font-size: 52px;
+        font-weight: 800;
+        color: white;
+    }
+
+    &-text-and-arrows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 52px;
+    }
+
+    &-text {
+        @extend %text;
+        width: 55%;
+        line-height: 24px;
+        color: white;
+    }
+
+    &-left-arrow {
+        margin: 20px;
+        border: none;
+        background: none;
+        outline: none;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+        transform: rotate(45deg);
+    }
+
+    &-right-arrow {
+        margin: 20px;
+        border: none;
+        background: none;
+        outline: none;
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+        transform: rotate(-45deg);
+    }
+
+    &-arrow:hover {
+        @extend %transitionDuration;
+        border-color: $link-text;
+    }
+
+    &-arrow:active {
+        opacity: 0.5;
+        transition-duration: 0.2s;
+    }
+
+    &-get-started-button {
+        padding: 20px 40px;
+        font-size: 14px;
+        line-height: 23px;
+        font-weight: 800;
+        background-color: #998675;
+        color: white;
+        border-radius: 3px;
+        border: none;
+    }
+
+    &-get-started-button:hover {
+        @extend %transitionDuration;
+        opacity: 0.7;
+        background-color: white;
+        color: #998675;
+    }
+}

@@ -1,0 +1,42 @@
+/* waxom-mobile-section */
+
+.waxom-mobile {
+    padding-top: 80px;
+    background-color: #fbfaf8;
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .waxom-mobile-heading {
+        margin-bottom: 40px;
+    }
+
+    .waxom-mobile-description {
+        @extend %text;
+        line-height: 28px;
+        color: #8c8c8c;
+        margin-bottom: 45px;
+    }
+
+    .waxom-mobile-features {
+        font-family: $Montserrat;
+        line-height: 32px;
+        font-weight: 300;
+        color: #8c8c8c;
+        padding-left: 100px;
+    }
+
+    .waxom-mobile-feature {
+        list-style: none;
+        position: relative;
+    }
+
+    .waxom-mobile-feature::before {
+        content: url(../assets/waxom-mobile-section/list_style_icon.png);
+        position: absolute;
+        top: 5px;
+        left: -40px;
+    }
+}

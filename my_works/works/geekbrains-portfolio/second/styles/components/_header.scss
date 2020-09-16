@@ -1,0 +1,70 @@
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 285px;
+
+    &-menu-and-buttons {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-menu {
+        &-link {
+            font-family: $Montserrat;
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: 300;
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+
+            &:hover {
+                @extend %transitionDuration;
+                color: $link-text;
+            }
+        }
+    }
+
+    &-buttons {
+        width: 8%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &-button {
+        outline: none;
+        border: none;
+        background: transparent;
+
+        &:hover &-icon {
+            @extend %transitionDuration;
+            fill: $link-text;
+        }
+    }
+
+    &-search-window {
+        width: 0;
+        height: 0;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 30px;
+        left: -145px;
+
+        &:focus {
+            height: 20px;
+            width: 200px;
+            transition-duration: 0.3s;
+        }
+    }
+
+    &-burger-menu {
+        display: none;
+    }
+}

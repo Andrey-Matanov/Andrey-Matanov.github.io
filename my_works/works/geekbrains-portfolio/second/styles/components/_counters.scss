@@ -1,0 +1,47 @@
+/* counters-section */
+
+.counters {
+    background-image: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
+
+    &-wrapper {
+        padding: 69px 0 92px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &-counter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        &-image {
+            margin-bottom: 30px;
+        }
+
+        &-amount {
+            font-family: $Montserrat;
+            color: white;
+            font-size: 48px;
+            line-height: 36px;
+            font-weight: 200;
+            margin-bottom: 21px;
+        }
+
+        &-title {
+            font-family: $Montserrat;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #c7b299;
+        }
+    }
+
+    &-counter::after {
+        content: '';
+        width: 30px;
+        border-bottom: 3px solid white;
+        position: absolute;
+        bottom: -30px;
+    }
+}
