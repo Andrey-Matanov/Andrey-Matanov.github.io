@@ -117,7 +117,7 @@ textarea {
 }
 
 .contacts__item_list {
-  padding-left: 30px;
+  padding-left: 25px;
 }
 
 .contacts__item_title {
@@ -170,6 +170,7 @@ textarea {
 }
 
 .contacts__contact_form {
+  width: 55%;
   padding: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,6 +378,9 @@ textarea {
   .contacts__contact_info {
     margin-bottom: 64px;
   }
+  .contacts__contact_form {
+    width: 65%;
+  }
   .map__image {
     width: 100%;
   }
@@ -458,6 +462,7 @@ textarea {
   }
   .contacts__contact_form {
     width: 100%;
+    padding: 36px;
     margin: 0 16px;
   }
   .contacts__contact_form_input {
@@ -472,14 +477,29 @@ textarea {
   .footer__top {
     width: 100%;
     padding: 18px 0 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
   }
+  .footer__top_left_column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .footer__heading {
-    max-width: 100%;
+    width: 65%;
   }
   .footer__heading {
     font-size: 24px;

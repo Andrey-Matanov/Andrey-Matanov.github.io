@@ -82,6 +82,7 @@
 
   .top_content {
     padding-top: 0px;
+    padding-bottom: 40px;
   }
 
   .header {
@@ -117,6 +118,9 @@
   }
 
   .what_we_do {
+    padding-top: 48px;
+    padding-bottom: 64px;
+
     &__heading {
       font-size: 24px;
       line-height: 28px;
@@ -167,12 +171,19 @@
     &__top {
       width: 100%;
       padding: 18px 0 40px 0;
+      display: flex;
       flex-direction: column;
       text-align: center;
+
+      &_left_column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &__heading {
-      max-width: 100%;
+      width: 65%;
     }
 
     &__heading {

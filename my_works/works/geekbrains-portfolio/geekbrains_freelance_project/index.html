@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Inter:wght@400;700&family=Merriweather:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <div class="header__left_column">
+          <div class="header__left_column_first">
+            <a href="index.html" class="header__logo header__link">КиноКино</a>
+            <button class="header__burger_menu">
+              <img src="./assets/header/burger-menu.svg" alt="Burger menu" />
+            </button>
+          </div>
+
+          <div class="header__left_column_second">
+            <a href="index.html" class="header__online_cinema_link header__link"
+              >Онлайн-кинотеатр</a
+            >
+            <a href="index.html" class="header__promocode_link header__link"
+              >Ввести промокод</a
+            >
+          </div>
+        </div>
+
+        <div class="header__right_column">
+          <form>
+            <div class="search">
+              <input
+                type="search"
+                name="q"
+                placeholder="Фильмы, сериалы, персоны"
+                class="search_input"
+              />
+              <button class="search_filter">
+                <img src="./assets/header/filter.svg" alt="filter" />
+              </button>
+              <input class="search_submit" type="submit" value="" />
+            </div>
+          </form>
+          <div class="header__buttons">
+            <button class="header__bookmark_button">
+              <img src="./assets/header/bookmark.svg" alt="Bookmark button" />
+            </button>
+            <button class="header__account_button">
+              <img
+                class="header_account_button_image"
+                src="./assets/header/account.svg"
+                alt="Account button"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="links">
+      <div class="wrapper links__wrapper">
+        <a href="index.html" class="links__media">Медиа</a>
+
+        <nav class="links__nav">
+          <a href="index.html" class="links__nav_link">Все материалы</a>
+          <a href="index.html" class="links__nav_link">Новости</a>
+          <a href="index.html" class="links__nav_link">Статьи</a>
+          <a href="index.html" class="links__nav_link">Видео</a>
+          <a href="index.html" class="links__nav_link">Тесты</a>
+          <a href="index.html" class="links__nav_link">Подкасты</a>
+        </nav>
+
+        <a href="index.html" class="links__rubrics">Рубрики</a>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="wrapper news__wrapper">
+        <div class="news__main">
+          <img
+            src="./assets/news/news_1.png"
+            alt="News 1"
+            class="news__main_image"
+          />
+          <div class="news__main_content">
+            <a href="index.html" class="news__main_link">
+              <h2 class="news__main_heading">
+                Фильм “Прислуга” вновь популярен на фоне протестов, но активисты
+                призывают не смотреть его
+              </h2></a
+            >
+            <div class="news__main_content_bottom">
+              <p class="news__item_date">Сегодня, 11:58</p>
+              <a href="index.html" class="news__main_link">
+                <p class="news__main_item_comments">14</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <img
+            src="assets/news/news_2.png"
+            alt="News 2"
+            class="news__item_image"
+          />
+          <div class="news__item_content">
+            <div class="news__item_content_top">
+              <a href="index.html" class="news__item_rubric_link vbn">
+                <h2 class="news__item_rubric">Бюро находок</h2></a
+              >
+              <a href="index.html" class="news__item_heading_link">
+                <h2 class="news__item_heading">
+                  Находка дня: Первые фильмы Квентина Тарантино, Кристофера
+                  Нолана и других...
+                </h2>
+              </a>
+            </div>
+            <div class="news__item_content_bottom">
+              <p class="news__item_date">Вчера</p>
+              <a href="index.html" class="news__item_comments_link">
+                <p class="news__item_comments">5</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <img
+            src="assets/news/news_3.png"
+            alt="News 2"
+            class="news__item_image"
+          />
+          <div class="news__item_content">
+            <div class="news__item_content_top">
+              <a href="index.html" class="news__item_heading_link">
+                <h2 class="news__item_heading">
+                  Опрос КиноПоиска: Выбираем лучший саундтрек к зарубежному
+                  фильму
+                </h2>
+              </a>
+            </div>
+            <div class="news__item_content_bottom">
+              <p class="news__item_date">Вчера</p>
+              <a href="index.html" class="news__item_comments_link">
+                <p class="news__item_comments">17</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <img
+            src="assets/news/news_4.png"
+            alt="News 2"
+            class="news__item_image"
+          />
+          <div class="news__item_content">
+            <div class="news__item_content_top">
+              <a href="index.html" class="news__item_heading_link">
+                <h2 class="news__item_heading">
+                  Forbes: Джонсон, Рейнольдс и Джоли вошли в список самых
+                  высокооплачиваемых звезд мира
+                </h2>
+              </a>
+            </div>
+            <div class="news__item_content_bottom">
+              <p class="news__item_date">Вчера</p>
+              <a href="index.html" class="news__item_comments_link">
+                <p class="news__item_comments">6</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <img
+            src="assets/news/news_5.png"
+            alt="News 2"
+            class="news__item_image"
+          />
+          <div class="news__item_content">
+            <div class="news__item_content_top">
+              <a href="index.html" class="news__item_heading_link">
+                <h2 class="news__item_heading">
+                  5 лучших трейлеров недели: “Объявлен мертвым”, “Перри Мэйсон”
+                  и “Еще по одной”
+                </h2>
+              </a>
+            </div>
+            <div class="news__item_content_bottom">
+              <p class="news__item_date">Вчера</p>
+              <a href="index.html" class="news__item_comments_link">
+                <p class="news__item_comments">4</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <img
+            src="assets/news/news_6.png"
+            alt="News 2"
+            class="news__item_image"
+          />
+          <div class="news__item_content">
+            <div class="news__item_content_top">
+              <a href="index.html" class="news__item_heading_link">
+                <h2 class="news__item_heading">
+                  Опрос: Фанаты “Звездных войн” считают ,что Сноук - клон
+                  императора
+                </h2>
+              </a>
+            </div>
+            <div class="news__item_content_bottom">
+              <p class="news__item_date">Вчера</p>
+              <a href="index.html" class="news__item_comments_link">
+                <p class="news__item_comments">11</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="news__item">
+          <img
+            src="assets/news/news_7.png"
+            alt="News 2"
+            class="news__item_image"
+          />
+          <div class="news__item_content">
+            <div class="news__item_content_top">
+              <a href="index.html" class="news__item_heading_link">
+                <h2 class="news__item_heading">
+                  Ушел из жизни актер Михаил Кокшенов
+                </h2>
+              </a>
+            </div>
+            <div class="news__item_content_bottom">
+              <p class="news__item_date">Вчера</p>
+              <a href="index.html" class="news__item_comments_link">
+                <p class="news__item_comments">5</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+  </body>
+</html>

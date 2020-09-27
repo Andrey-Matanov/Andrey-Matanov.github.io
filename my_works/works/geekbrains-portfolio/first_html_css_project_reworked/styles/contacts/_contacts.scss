@@ -21,7 +21,7 @@
   }
 
   &__item_list {
-    padding-left: 30px;
+    padding-left: 25px;
   }
 
   &__item {
@@ -79,6 +79,7 @@
   }
 
   &__contact_form {
+    width: 55%;
     padding: 56px;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,53 @@
+.links {
+  padding: 29px 0 49px 0;
+  font-family: "Archivo", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__media {
+    font-family: $Inter;
+    font-weight: 700;
+    font-size: 24px;
+    color: black;
+  }
+
+  &__nav {
+    font-family: $Archivo;
+    letter-spacing: 1px;
+    color: #898989;
+    font-weight: 600;
+  }
+
+  &__nav_link {
+    padding: 8px 0;
+    font-size: 14px;
+    margin: 0 14px;
+
+    &:hover {
+      color: black;
+      border-bottom: 1px solid #ff561b;
+      transition: $transition_time;
+    }
+  }
+
+  &__rubrics {
+    color: #898989;
+    position: relative;
+    padding-right: 24px;
+    font-family: $Archivo;
+    letter-spacing: 1px;
+    font-size: 14px;
+
+    &::after {
+      position: absolute;
+      right: -5px;
+      top: -3px;
+      content: url("../assets/links/rubrics.png");
+    }
+  }
+}

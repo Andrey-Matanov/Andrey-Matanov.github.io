@@ -443,6 +443,7 @@ img {
   }
   .top_content {
     padding-top: 0px;
+    padding-bottom: 40px;
   }
   .header {
     padding: 16px 0 28px 0;
@@ -477,6 +478,10 @@ img {
   }
   .top_content_main__button {
     padding: 1px 8px;
+  }
+  .what_we_do {
+    padding-top: 48px;
+    padding-bottom: 64px;
   }
   .what_we_do__heading {
     font-size: 24px;
@@ -517,14 +522,29 @@ img {
   .footer__top {
     width: 100%;
     padding: 18px 0 40px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
   }
+  .footer__top_left_column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .footer__heading {
-    max-width: 100%;
+    width: 65%;
   }
   .footer__heading {
     font-size: 24px;

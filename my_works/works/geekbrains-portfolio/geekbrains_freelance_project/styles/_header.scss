@@ -1,0 +1,107 @@
+.header {
+  background-color: rgba($color: #060606, $alpha: 0.88);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+
+  &__wrapper {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: white;
+  }
+
+  &__left_column {
+    display: flex;
+    align-items: center;
+
+    &_first {
+      display: flex;
+      align-items: center;
+    }
+
+    &_second {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  &__burger_menu {
+    background: none;
+    border: none;
+    display: flex;
+    margin-right: 88px;
+  }
+
+  &__online_cinema_link {
+    position: relative;
+    font-size: 14px;
+    margin-right: 41px;
+
+    &::before {
+      position: absolute;
+      left: -16px;
+      content: url("../assets/header/play_button.svg");
+    }
+  }
+
+  &__promocode_link {
+    position: relative;
+    font-size: 14px;
+
+    &::before {
+      position: absolute;
+      top: -5px;
+      left: -23px;
+      content: url("../assets/header/gift.svg");
+    }
+  }
+
+  &__right_column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__search {
+    padding: 10px 15px;
+    width: 50%;
+    background: #585858;
+    border: none;
+    border-radius: 4px;
+    color: white;
+
+    &:placeholder-shown {
+      font-family: "Inter";
+    }
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__bookmark_button {
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+  }
+
+  &__account_button {
+    background-color: #c4c4c4;
+    border-radius: 100px;
+    border: none;
+    padding: 10px;
+    margin-left: 28px;
+    height: 44px;
+  }
+}
