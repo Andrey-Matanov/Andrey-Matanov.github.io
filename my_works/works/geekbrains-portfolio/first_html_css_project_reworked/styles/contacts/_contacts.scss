@@ -21,7 +21,7 @@
   }
 
   &__item_list {
-    padding-left: 25px;
+    padding-left: 30px;
   }
 
   &__item {
@@ -125,13 +125,13 @@
 
     &_input {
       padding: 21px 0 21px 36px;
-      width: 428px;
+      max-width: 428px;
       margin-bottom: 32px;
     }
 
     &_textarea {
       padding: 21px 0 0 36px;
-      width: 428px;
+      max-width: 428px;
       height: 144px;
       resize: none;
       margin-bottom: 72px;

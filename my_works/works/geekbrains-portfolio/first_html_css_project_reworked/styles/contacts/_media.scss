@@ -3,36 +3,31 @@
     padding: 0 32px;
   }
 
-  .top_content_main__wrapper {
-    padding-bottom: 130px;
-    background-position: right 175px;
+  .header {
+    padding: 10px 0 41px 0;
   }
 
-  .what_we_do {
-    padding: 64px 0 127px 0;
+  .contact_us {
+    padding-bottom: 64px;
 
-    &__items {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    &__item {
-      margin-bottom: 32px;
-
-      &:last-child {
-        margin-bottom: 0px;
-      }
-    }
-  }
-
-  .our_project {
     &__description {
-      max-width: 540px;
+      width: 65%;
+    }
+  }
+
+  .contacts {
+    &__wrapper {
+      flex-direction: column;
     }
 
-    &__item_title {
-      top: 20px;
-      left: 20px;
+    &__contact_info {
+      margin-bottom: 64px;
+    }
+  }
+
+  .map {
+    &__image {
+      width: 100%;
     }
   }
 
@@ -77,84 +72,65 @@
 @media (max-width: 512px) {
   .wrapper {
     padding: 0 16px;
-    box-sizing: border-box;
   }
 
   .header {
-    margin-bottom: 28px;
+    padding: 10px 0 25px 0;
   }
 
-  .top_content_main {
-    &__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background: none;
-    }
-
+  .contact_us {
     &__heading {
-      width: 80%;
-      font-size: 32px;
-      line-height: 37px;
-      text-align: center;
-      margin-bottom: 12px;
-    }
-
-    &__text {
+      font-size: 24px;
+      line-height: 28px;
       margin-bottom: 32px;
     }
 
-    &__button {
-      padding: 1px 8px;
+    &__description {
+      width: 90%;
+      font-size: 16px;
+      line-height: 30px;
     }
   }
 
-  .what_we_do {
-    &__heading {
-      font-size: 24px;
-      line-height: 28px;
-    }
-  }
-
-  .our_project {
-    padding-bottom: 64px;
-
-    &__heading {
-      font-size: 24px;
-      line-height: 28px;
+  .contacts {
+    &__wrapper {
+      padding: 16px;
     }
 
-    &__items {
-      display: block;
+    &__item_description {
+      max-width: 80%;
     }
 
-    &__item {
+    &__contact_info {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__image {
+      align-self: center;
+    }
+
+    &__contact_info_item {
+      margin-bottom: 32px;
+    }
+
+    &__contact_form {
       width: 100%;
-      margin-bottom: 16px;
+      margin: 0 16px;
 
-      &:last-child {
-        margin: 0;
+      &_input {
+        padding: 13px 0 13px 26px;
       }
-    }
 
-    &__item_title {
-      top: 26px;
-      left: 16px;
-      font-size: 16px;
-      line-height: 19px;
-    }
+      &_textarea {
+        padding: 13px 0 0 22px;
+      }
 
-    &__smart_home_item {
-      margin-bottom: 16px;
-    }
-
-    &__smart_home_title {
-      top: 16px;
-      right: 16px;
-      font-size: 16px;
-      line-height: 19px;
+      &_button {
+        padding: 15px 0;
+      }
     }
   }
 
