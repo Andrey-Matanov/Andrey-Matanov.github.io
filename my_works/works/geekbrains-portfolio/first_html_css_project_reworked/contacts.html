@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/contacts/stylesheet.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a href="index.html">
+          <img src="./assets/header/main_page_logo.svg" alt="Main page" />
+        </a>
+        <a href="contacts.html">
+          <img
+            src="./assets/header/contacts_page_logo.svg"
+            alt="Contacts page"
+          />
+        </a>
+      </div>
+    </header>
+
+    <section class="contact_us">
+      <div class="contacts_page_wrapper">
+        <h1 class="contact_us__heading">Contact Us</h1>
+        <p class="contact_us__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+    </section>
+
+    <section class="contacts">
+      <div class="contacts_page_wrapper contacts__wrapper">
+        <div class="contacts__contact_info">
+          <img
+            src="./assets/contacts/contacts/contact_info_image.png"
+            alt=""
+            class="contacts__image"
+          />
+          <div class="contacts__contact_info_item">
+            <p class="contacts__item_title">ADDRESS</p>
+            <p class="contacts__item_description">
+              Id convallis placerat sit sed duis id amet volutpat quam a,
+              pharetra.
+            </p>
+          </div>
+          <div class="contacts__contact_info_item">
+            <p class="contacts__item_title">PHONE</p>
+            <ul class="contacts__item_list">
+              <li class="contacts__link contacts__phone_number">
+                <a class="contacts__link_text" href="tel:+7-812-7313-4321"
+                  >+7-812-7313-4321</a
+                >
+              </li>
+              <li class="contacts__link contacts__phone_number">
+                <a class="contacts__link_text" href="tel:+7-812-7313-4321"
+                  >+7-817-0000-1234</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__contact_info_item">
+            <p class="contacts__item_title">ONLINE SERVICE</p>
+            <ul class="contacts__item_list">
+              <li class="contacts__link contacts__website_link">
+                <a class="contacts__link_text" href="http://www.site.com/"
+                  >www.site.com</a
+                >
+              </li>
+              <li class="contacts__link contacts__email">
+                <a
+                  class="contacts__link_text"
+                  href="mailto:hello.site@gmail.com"
+                  >hello.site@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <form action="contacts.html" class="contacts__contact_form">
+          <p class="contacts__contact_form_title">SEND US MESSAGE</p>
+          <label class="contacts__contact_form_label" for="name"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            class="contacts__contact_form_input contacts__contact_form_input_area"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+          <label class="contacts__contact_form_label" for="email">Email</label>
+          <input
+            type="email"
+            class="contacts__contact_form_input contacts__contact_form_input_area"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+          />
+          <label class="contacts__contact_form_label" for="message"
+            >Message</label
+          >
+          <textarea
+            class="contacts__contact_form_textarea contacts__contact_form_input_area"
+            name="message"
+            id="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button class="contacts__contact_form_button" type="submit">
+            SUBMIT
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="contacts_page_wrapper">
+        <img src="./assets/contacts/map/map.jpg" alt="" class="map__image" />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper footer__top_wrapper">
+        <div class="footer__top">
+          <div class="footer__top_left_column">
+            <h2 class="footer__heading">Interested to work with our team?</h2>
+            <p class="footer__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+          </div>
+          <button class="footer__lets_talk_button">Let’s Talk</button>
+        </div>
+      </div>
+      <div class="footer__line"></div>
+      <div class="wrapper">
+        <div class="footer__bottom">
+          <div class="footer__contacts">
+            <p class="footer__contacts_item footer__contacts_address">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+            <p class="footer__contacts_item footer__contacts_phone_number">
+              <a class="footer__link" href="tel:+7-812-7313-4321"
+                >+7-812-7313-4321</a
+              >
+            </p>
+            <p class="footer__contacts_item footer__contacts_email">
+              <a class="footer__link" href="mailto:hello.site@gmail.com"
+                >hello.site@gmail.com</a
+              >
+            </p>
+          </div>
+          <p class="footer__copyright">2020 All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

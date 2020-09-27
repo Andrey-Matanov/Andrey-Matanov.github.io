@@ -1,0 +1,92 @@
+.footer {
+  background: #316099;
+
+  &__top {
+    padding: 96px 0 91px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    max-width: 341px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin-bottom: 32px;
+  }
+
+  &__description {
+    max-width: 495px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.6;
+  }
+
+  &__lets_talk_button {
+    padding: 15px 80px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    border: none;
+    background: #5a98d0;
+  }
+
+  &__line {
+    border-bottom: 1px solid rgba($color: white, $alpha: 0.4);
+  }
+
+  &__bottom {
+    padding: 64px 0;
+  }
+
+  &__contacts {
+    display: flex;
+    margin-bottom: 64px;
+
+    &_item {
+      padding-left: 20px;
+      line-height: 26px;
+      letter-spacing: 0.05em;
+      color: #ffffff;
+      position: relative;
+      margin-right: 94px;
+    }
+
+    &_address::before {
+      position: absolute;
+      left: 0px;
+      content: "A.";
+    }
+
+    &_phone_number::before {
+      position: absolute;
+      left: 0px;
+      content: "T.";
+    }
+
+    &_email::before {
+      position: absolute;
+      left: 0px;
+      content: "E.";
+    }
+  }
+
+  &__link {
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+
+  &__copyright {
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.4;
+  }
+}

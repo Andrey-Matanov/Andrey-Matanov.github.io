@@ -1,0 +1,154 @@
+.contacts {
+  padding-top: 57px;
+  padding-bottom: 96px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__image {
+    margin-bottom: 56px;
+  }
+
+  &__contact_info_item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__item_list {
+    padding-left: 25px;
+  }
+
+  &__item {
+    &_title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+      margin-bottom: 24px;
+    }
+
+    &_description {
+      max-width: 299px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+
+      letter-spacing: 0.04em;
+
+      /* Blue_01 */
+
+      color: #1f3f68;
+      opacity: 0.6;
+    }
+  }
+
+  &__link {
+    padding-left: 19px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &_text {
+      font-weight: 300;
+      line-height: 26px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+    }
+  }
+
+  &__phone_number {
+    list-style: url("../../assets/contacts/contacts/phone_number.svg");
+  }
+
+  &__website_link {
+    list-style: url("../../assets/contacts/contacts/website.svg");
+  }
+
+  &__email {
+    list-style: url("../../assets/contacts/contacts/email.svg");
+  }
+
+  &__contact_form {
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+
+    &_title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+      margin-bottom: 48px;
+    }
+
+    &_label {
+      line-height: 30px;
+      letter-spacing: 0.04em;
+      color: #1f3f68;
+      opacity: 0.8;
+      margin-bottom: 8px;
+    }
+
+    &_input_area {
+      opacity: 0.4;
+      border: 1px solid #356ead;
+      border-radius: 10px;
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.04em;
+
+      &:placeholder-shown {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #1f3f68;
+        opacity: 0.2;
+      }
+    }
+
+    &_input {
+      padding: 21px 0 21px 36px;
+      width: 428px;
+      margin-bottom: 32px;
+    }
+
+    &_textarea {
+      padding: 21px 0 0 36px;
+      width: 428px;
+      height: 144px;
+      resize: none;
+      margin-bottom: 72px;
+    }
+
+    &_button {
+      padding: 23px 0;
+      background: #5a98d0;
+      box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+      border-radius: 10px;
+      border: none;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+    }
+  }
+}

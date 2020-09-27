@@ -1,0 +1,25 @@
+.contact_us {
+  padding-top: 51px;
+  padding-bottom: 49px;
+  background-image: url("../../assets/contacts/contact_us/background.png");
+  text-align: center;
+  color: white;
+
+  &__heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    max-width: 780px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+  }
+}

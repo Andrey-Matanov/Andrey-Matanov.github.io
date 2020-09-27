@@ -1,0 +1,84 @@
+index.html:
+
+h1:
+
+font-weight: 300;
+font-size: 64px;
+line-height: 74px;
+letter-spacing: 0.04em;
+color: #1F3F68;
+
+
+h2:
+
+font-weight: 300;
+font-size: 36px;
+line-height: 46px;
+text-align: center;
+letter-spacing: 0.05em;
+
+
+h2__description:
+
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.05em;
+color: #222222;
+
+
+text_1: 
+
+font-weight: normal;
+line-height: 26px;
+letter-spacing: 0.05em;
+color: #1F3F68;
+opacity: 0.6;
+
+
+button: 
+
+line-height: 26px;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+
+
+2_section__item_title:
+
+font-size: 20px;
+line-height: 30px;
+letter-spacing: 0.05em;
+color: #1F3F68;
+
+
+2_section__item_content:
+
+line-height: 26px;
+letter-spacing: 0.05em;
+color: #1F3F68;
+opacity: 0.6;
+
+
+our_project__item_title
+
+font-size: 32px;
+line-height: 46px;
+text-align: right;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+
+
+footer_heading
+
+font-size: 36px;
+line-height: 46px;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+
+
+footer_content (all content)
+
+line-height: 26px;
+letter-spacing: 0.05em;
+color: #FFFFFF;
+opacity: different
