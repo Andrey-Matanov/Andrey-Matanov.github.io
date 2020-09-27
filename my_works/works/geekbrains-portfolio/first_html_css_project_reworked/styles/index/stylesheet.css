@@ -441,8 +441,12 @@ img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+  .top_content {
+    padding-top: 0px;
+  }
   .header {
-    margin-bottom: 28px;
+    padding: 16px 0 28px 0;
+    margin-bottom: 0px;
   }
   .top_content_main__wrapper {
     display: -webkit-box;
