@@ -1,33 +1,109 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="common_styles.css">
-</head>
-<body>
-<header>
-    <h1>Добро пожаловать на мой сайт-портфолио</h1>
-</header>
-<nav>
-    <a href="index.html">Главная</a>
-    <a href="my_works/my_works.html">Мои работы</a>
-    <a href="my_skills/my_skills.html">Мои навыки</a>
-</nav>
-<section id="main">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#about" class="header__link">About</a>
+      <a href="#my_works" class="header__link">My works</a>
+      <a href="#contact_me" class="header__link">Contact me</a>
+    </header>
 
-</section>
-<footer>
-    <a href="https://t.me/Oohman_t" target="_blank">
-        <img src="img/telegram-logo.png" alt="telegram-logo" width="40px" height="40px">
-        <span>Мой профиль Telegram</span>
-    </a>
-    <a href="https://vk.com/puzler" target="_blank">
-        <img src="img/vk-logo.jpg" alt="vk-logo.jpg" width="40px" height="40px">
-        <span>Моя страница ВК</span>
-    </a>
-</footer>
+    <section class="about" id="about">
+      <div class="wrapper">
+        <h1 class="about__heading">Hey I am Andrey Matanov</h1>
+        <h2 class="about__second_heading">a web developer</h2>
+      </div>
+    </section>
 
-</body>
+    <section class="my_works" id="my_works">
+      <div class="wrapper">
+        <h2 class="my_works__heading">These are some of my projects</h2>
+        <div class="my_works__list">
+          <figure class="my_works__project">
+            <img
+              src="./assets/homepage.png"
+              alt="Landing Page №1"
+              class="my_works__project_image"
+            />
+            <figcaption class="my_works__project_title">
+              <a
+                href="my_works/first_html_css_project_reworked/index.html"
+                class="my_works__project_link"
+                target="_blank"
+                >Landing Page №1</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="my_works__project">
+            <img
+              src="./assets/Waxom Landing Page.jpg"
+              alt="Waxom landing page"
+              class="my_works__project_image"
+            />
+            <figcaption class="my_works__project_title">
+              <a
+                href="my_works/second/index.html"
+                class="my_works__project_link"
+                target="_blank"
+                >Waxom Landing Page</a
+              >
+            </figcaption>
+          </figure>
+          <figure class="my_works__project">
+            <img
+              src="./assets/Online cinema page.png"
+              alt="Online cinema page"
+              class="my_works__project_image"
+            />
+            <figcaption class="my_works__project_title">
+              <a
+                href="my_works/geekbrains_freelance_project/index.html"
+                class="my_works__project_link"
+                target="_blank"
+                >Online Cinema Page</a
+              >
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact_me" id="contact_me">
+      <div class="wrapper">
+        <h2 class="contact_me__heading">Let's work together...</h2>
+        <div class="contact_me__social_links">
+          <a
+            href="https://t.me/Oohman_t"
+            class="contact_me__link"
+            target="_blank"
+            >Telegram</a
+          >
+          <a href="mailto:rtrebor608@gmail.com" class="contact_me__link"
+            >Email</a
+          >
+          <a
+            href="https://github.com/Andrey-Matanov"
+            class="contact_me__link"
+            target="_blank"
+            >Github</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © Created by Andrey Matanow. Thanks to
+      <a
+        href="https://www.freecodecamp.org/"
+        target="_blank"
+        class="footer__link"
+        >freeCodeCamp</a
+      >
+    </footer>
+  </body>
 </html>
