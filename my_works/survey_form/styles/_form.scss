@@ -1,0 +1,46 @@
+.form {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 450px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  &__input_container {
+    display: flex;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input_small {
+    width: initial;
+    margin-right: 10px;
+  }
+
+  &__comment {
+    height: 80px;
+  }
+
+  &__submit {
+    border: none;
+    background-color: lightslategrey;
+    color: white;
+  }
+
+  &__span {
+    font-size: 12px;
+  }
+}
+
+.not_label {
+  cursor: initial;
+}

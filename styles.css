@@ -75,6 +75,7 @@ img {
 }
 
 .my_works__project {
+  border: 3px solid white;
   flex-basis: 30%;
 }
 

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <h1 class="form__heading" id="title">FreeCodeCamp Survey Form</h1>
+    <p class="form__description" id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form class="form" action="#" id="survey-form">
+      <div class="form__item">
+        <label class="form__title" for="name" id="name-label">Name</label>
+        <input
+          class="form__name"
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label class="form__title" for="email" id="email-label">Email</label>
+        <input
+          class="form__email"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="form__item">
+        <label class="form__title" for="number" id="number-label"
+          >Age<span class="form__span">(optional)</span></label
+        >
+        <input
+          class="form__age"
+          type="number"
+          name="age"
+          id="number"
+          min="18"
+          max="99"
+          placeholder="18"
+        />
+      </div>
+      <div class="form__item">
+        <label class="form__title" for="dropdown"
+          >Which option best describes your current role?</label
+        >
+        <select class="form__current_role" name="current_role" id="dropdown">
+          <option value="" selected disabled>Select current role</option>
+          <option class="option" value="std">Student</option>
+          <option class="option" value="ftj">Full Time Job</option>
+          <option class="option" value="ftl">Full Time Learner</option>
+          <option class="option" value="pnts">Prefer not to say</option>
+          <option class="option" value="other">Other</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <p class="form__title not_label">
+          Would you recommend freeCodeCamp to a friend?
+        </p>
+        <div class="form__recomendation_choice">
+          <div class="form__input_container">
+            <input
+              class="form__input_small custom_radio"
+              type="radio"
+              name="recommendation"
+              id="recommendation1"
+              value="definitely"
+              checked
+            />
+            <label for="recommendation1">Definitely</label>
+          </div>
+          <div class="form__input_container">
+            <input
+              class="form__input_small custom_radio"
+              type="radio"
+              name="recommendation"
+              id="recommendation2"
+              value="maybe"
+            />
+            <label for="recommendation2">Maybe</label>
+          </div>
+          <div class="form__input_container">
+            <input
+              class="form__input_small custom_radio"
+              type="radio"
+              name="recommendation"
+              id="recommendation3"
+              value="not_sure"
+            />
+            <label for="recommendation3">Not sure</label>
+          </div>
+        </div>
+      </div>
+      <div class="form__item">
+        <label class="form__title" for="features">
+          What is your favorite feature of freeCodeCamp?
+        </label>
+        <select class="form__current_role" name="current_role" id="features">
+          <option value="" selected disabled>Select an option</option>
+          <option value="chl">Challenges</option>
+          <option value="prj">Projects</option>
+          <option value="cmn">Community</option>
+          <option value="opns">Open Source</option>
+        </select>
+      </div>
+      <div class="form__item">
+        <p class="form__title not_label">
+          What would you like to see improved?
+          <span class="form__span">(Check all that apply)</span>
+        </p>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="front_end"
+            value="front_end"
+          />
+          <label for="front_end">Front-end Projects</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="back_end"
+            value="back_end"
+          />
+          <label for="back_end">Back-end Projects</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="data_visualization"
+            value="data_visualization"
+          />
+          <label for="data_visualization">Data Visualization</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="challenges"
+            value="challenges"
+          />
+          <label for="challenges">Challenges</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="open_source"
+            value="open_source"
+          />
+          <label for="open_source">Open Source Community</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="gitter"
+            value="gitter"
+          />
+          <label for="gitter">Gitter help rooms</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="videos"
+            value="videos"
+          />
+          <label for="videos">Videos</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="meetups"
+            value="meetups"
+          />
+          <label for="meetups">City Meetups</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="wiki"
+            value="wiki"
+          />
+          <label for="wiki">Wiki</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="forum"
+            value="forum"
+          />
+          <label for="forum">Forum</label>
+        </div>
+        <div class="form__input_container">
+          <input
+            class="form__input_small custom_checkbox"
+            type="checkbox"
+            name="improvement"
+            id="additional_courses"
+            value="additional_courses"
+          />
+          <label for="additional_courses">Additional Courses</label>
+        </div>
+      </div>
+      <div class="form__item">
+        <label class="form__title" for="comment"
+          >Any comments or suggestions?</label
+        >
+        <textarea
+          class="form__comment"
+          name="comment"
+          id="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <button class="form__submit" type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
