@@ -192,20 +192,19 @@ img {
     padding: 10px;
     font-size: 14px;
   }
+
+  .contact_me__heading {
+    font-size: 24px;
+  }
+
+  .contact_me__link {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 375px) {
   .header__link {
     padding: 5px;
     font-size: 10px;
-  }
-}
-
-@media (max-width: 340px) {
-  .header {
-    width: initial;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    display: flex;
   }
 }
