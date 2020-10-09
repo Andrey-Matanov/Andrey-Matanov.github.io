@@ -1,0 +1,56 @@
+.header {
+    background-color: $primaryColor;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo {
+        width: 150px;
+    }
+
+    &__basket_button {
+        padding: 0 10px;
+    }
+}
+
+.nav {
+    display: flex;
+    margin: 0 auto;
+    align-items: initial;
+
+    &__link {
+        display: block;
+        color: white;
+        padding: 20px;
+
+        &:hover {
+            background-color: white;
+            color: $primaryColor;
+        }
+    }
+}
+
+.basket {
+    padding: 20px;
+    border: 1px solid $primaryColor;
+    display: none;
+    right: 0;
+    bottom: -150px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: white;
+
+    &_active {
+        display: block;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
