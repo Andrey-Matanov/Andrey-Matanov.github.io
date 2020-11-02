@@ -250,7 +250,7 @@ const app = new Vue({
                 });
         },
         fullPath100(path) {
-            return `../assets/100x100/` + path;
+            return `./assets/100x100/` + path;
         },
         fullPath50(path) {
             return "../assets/50x50/" + path;
