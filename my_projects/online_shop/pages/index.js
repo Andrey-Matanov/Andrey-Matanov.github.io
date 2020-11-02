@@ -1,6 +1,7 @@
-import { onScrollFunction } from "./common.js";
-import Header from "./components/Header.js";
-import Footer from "./components/Footer.js";
+import { onScrollFunction } from "../common.js";
+import { hostBus } from "../components/HostBus.js";
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 
 const app = new Vue({
     el: ".root",
@@ -13,6 +14,7 @@ const app = new Vue({
         <div class="top">
             <shop-header></shop-header>
             <div class="catalog__wrapper wrapper">
+                <h1 style="text-align: center; margin-bottom: 20px">Добро пожаловать в интернет-магазин одежды</h1>
                 <div class="catalog_search__container">
                     <p class="catalog_search__title">Поиск по каталогу:</p>
                     <input
@@ -39,7 +41,7 @@ const app = new Vue({
                             <button
                                 class="addProduct"
                                 :data-fullname="item.fullname"
-                                @click="addProduct"
+                                @click="addToBasket"
                             >
                                 Добавить товар
                             </button>
@@ -72,8 +74,6 @@ const app = new Vue({
 
     `,
     data: {
-        // catalogURL:
-        //     "https://raw.githubusercontent.com/Andrey-Matanov/geekbrains_js_level2/master/data/catalog.json",
         catalogURL: "./catalog.json",
         catalogItems: [],
         searchLine: "",
@@ -97,8 +97,8 @@ const app = new Vue({
         },
         addToBasket(event) {
             hostBus.$emit(
-                "add-to-basket",
-                this.returnCatalogItem(event.current.dataset.fullname)
+                "addToBasket",
+                this.returnCatalogItem(event.target.dataset.fullname)
             );
         },
         returnCatalogItem(fullname) {
@@ -111,23 +111,6 @@ const app = new Vue({
                 }
             });
             return newItem;
-        },
-        async addProduct(event) {
-            const fullname = event.target.dataset.fullname;
-            console.log(fullname);
-            let postItem;
-            this.catalogItems.forEach((item) => {
-                if (item.fullname == fullname) {
-                    postItem = { ...item, amount: 1 };
-                }
-            });
-            const response = await fetch(this.basketURL, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(postItem),
-            });
         },
     },
     computed: {

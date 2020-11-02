@@ -1,22 +1,32 @@
 [
-	{
-		"id": 115,
-		"title": "Черная футболка",
-		"category": "футболка",
-		"discount": 5,
-		"price": 150,
-		"img": "tshirts/black_tshirt.jpg",
-		"fullname": "black_tshirt",
-		"amount": 8
-	},
-	{
-		"id": 116,
-		"title": "Оранжевая футболка",
-		"category": "футболка",
-		"discount": 5,
-		"price": 130,
-		"img": "tshirts/orange_tshirt.jpg",
-		"fullname": "orange_tshirt",
-		"amount": 3
-	}
+    {
+        "id": 115,
+        "title": "Черная футболка",
+        "category": "футболка",
+        "discount": 5,
+        "price": 150,
+        "img": "tshirts/black_tshirt.jpg",
+        "fullname": "black_tshirt",
+        "amount": 2
+    },
+    {
+        "id": 116,
+        "title": "Оранжевая футболка",
+        "category": "футболка",
+        "discount": 5,
+        "price": 130,
+        "img": "tshirts/orange_tshirt.jpg",
+        "fullname": "orange_tshirt",
+        "amount": 1
+    },
+    {
+        "id": 568,
+        "title": "Красная куртка",
+        "category": "куртка",
+        "discount": 5,
+        "price": 350,
+        "img": "jackets/red_jacket.jpg",
+        "fullname": "red_jacket",
+        "amount": 1
+    }
 ]

@@ -1,22 +1,19 @@
+import { hostBus } from "../components/HostBus.js";
+
 const Header = {
+    props: ["items"],
     template: `
     <header class="header">
         <div class="wrapper header__wrapper">
             <a href="index.html" class="header__logo_link">
-                <img class="header__logo" src="../assets/logo.png" alt="Logo" />
+                <img class="header__logo" src="./assets/logo.jpg" alt="Logo" />
             </a>
             <nav class="nav">
                 <div class="nav__link_container">
                     <a href="index.html" class="nav__link">Главная</a>
                 </div>
                 <div class="nav__link_container">
-                    <a href="catalog.html" class="nav__link">Каталог</a>
-                </div>
-                <div class="nav__link_container">
                     <a href="contacts.html" class="nav__link">Наши контакты</a>
-                </div>
-                <div class="nav__link_container">
-                    <a href="about.html" class="nav__link">О нас</a>
                 </div>
             </nav>
             <div class="header__buttons">
@@ -64,11 +61,12 @@ const Header = {
                 </button>
             </div>
             <div class="basket" v-bind:class="{ basket_active: isBasketVisible }">
-                <div class="basket__items">
-                    <div v-if="isBasketEmpty">
-                        <p class="basket__empty">В данный момент корзина пуста</p>
-                    </div>
-                    <div v-else v-for="item in basketItems" class="basket__item">
+                <div v-if="isBasketEmpty">
+                    <p class="basket__empty">В данный момент корзина пуста</p>
+                </div>
+                <div v-else class="basket__items">
+                    <p style="text-align: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(255, 255, 255, 0.5)">Товары в вашей корзине</p>
+                    <div  v-for="item in basketItems" class="basket__item">
                         <img
                             class="basket__item_image"
                             :src="fullPath50(item.img)"
@@ -110,9 +108,32 @@ const Header = {
         fullPath50(path) {
             return `./assets/50x50/` + path;
         },
+        addToCart(good) {
+            let isItemFound = false;
+            this.basketItems.map((item) => {
+                if (item.fullname == good.fullname) {
+                    item.amount++;
+                    isItemFound = true;
+                }
+            });
+            if (!isItemFound) {
+                this.basketItems.push({ ...good, amount: 1 });
+            }
+        },
     },
     created() {
-        this.makeGETRequest();
+        hostBus.$on("addToBasket", this.addToCart);
+    },
+    mounted() {
+        console.log(this.items);
+        if (this.items === undefined) {
+            this.makeGETRequest();
+        } else {
+            this.basketItems = JSON.parse(JSON.stringify(this.items));
+        }
+    },
+    beforeDestroy() {
+        hostBus.$off("addToBasket");
     },
 };
 
