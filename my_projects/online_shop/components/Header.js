@@ -108,7 +108,7 @@ const Header = {
                 });
         },
         fullPath50(path) {
-            return `../assets/50x50/` + path;
+            return `./assets/50x50/` + path;
         },
     },
     created() {

@@ -93,7 +93,7 @@ const app = new Vue({
                 });
         },
         fullPath(path) {
-            return `../assets/` + path;
+            return `./assets/` + path;
         },
         addToBasket(event) {
             hostBus.$emit(
