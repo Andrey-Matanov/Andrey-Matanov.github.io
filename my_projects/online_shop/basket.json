@@ -1,0 +1,22 @@
+[
+	{
+		"id": 115,
+		"title": "Черная футболка",
+		"category": "футболка",
+		"discount": 5,
+		"price": 150,
+		"img": "tshirts/black_tshirt.jpg",
+		"fullname": "black_tshirt",
+		"amount": 8
+	},
+	{
+		"id": 116,
+		"title": "Оранжевая футболка",
+		"category": "футболка",
+		"discount": 5,
+		"price": 130,
+		"img": "tshirts/orange_tshirt.jpg",
+		"fullname": "orange_tshirt",
+		"amount": 3
+	}
+]
