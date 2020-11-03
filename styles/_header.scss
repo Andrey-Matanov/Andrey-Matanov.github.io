@@ -1,0 +1,63 @@
+.header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: $primaryColor;
+    border-bottom: 2px solid $textColor;
+
+    &__dark {
+        background-color: $primaryColor_dark;
+        border-color: $textColor_dark;
+    }
+
+    &__buttons {
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__button {
+        border: none;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    &__change_theme_icon {
+        fill: $secondaryColor;
+
+        &:hover {
+            fill: $primaryColor_dark;
+        }
+    }
+
+    &__change_theme_icon__dark {
+        fill: $secondaryColor_dark;
+
+        &:hover {
+            fill: $primaryColor;
+        }
+    }
+
+    &__links {
+        display: flex;
+    }
+
+    &__link {
+        padding: 20px;
+        color: $textColor;
+        font-size: 24px;
+
+        &:hover {
+            background-color: $secondaryColor;
+        }
+    }
+
+    &__link__dark {
+        color: $textColor_dark;
+
+        &:hover {
+            background-color: $secondaryColor_dark;
+        }
+    }
+}

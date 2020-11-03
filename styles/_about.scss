@@ -1,0 +1,28 @@
+.about {
+    background-color: $secondaryColor;
+    padding: 150px 0;
+    text-align: center;
+
+    &__dark {
+        background-color: $secondaryColor_dark;
+    }
+
+    &__heading {
+        font-size: 64px;
+        margin-bottom: 10px;
+        color: $textColor;
+
+        &__dark {
+            color: $textColor_dark;
+        }
+    }
+
+    &__second_heading {
+        font-size: 48px;
+        color: $primaryColor;
+
+        &__dark {
+            color: $primaryColor_dark;
+        }
+    }
+}

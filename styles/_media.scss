@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+
+    .header__link {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .about {
+        padding: 150px 0 100px;
+    }
+
+    .about__heading {
+        font-size: 48px;
+    }
+
+    .about__second_heading {
+        font-size: 36px;
+    }
+
+    .my_works__heading {
+        font-size: 28px;
+    }
+
+    .my_works__list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .my_works__project {
+        flex-basis: 40%;
+    }
+
+    .contact_me__heading {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 512px) {
+    .my_works__project {
+        flex-basis: 80%;
+    }
+
+    .header {
+        justify-content: center;
+    }
+
+    .header__link {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact_me__heading {
+        font-size: 24px;
+    }
+
+    .contact_me__link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__link {
+        padding: 5px;
+        font-size: 10px;
+    }
+}

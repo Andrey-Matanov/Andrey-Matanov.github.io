@@ -4,13 +4,37 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Мой сайт-портфолио</title>
-        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
     </head>
     <body>
         <header class="header">
-            <a href="#about" class="header__link">Обо мне</a>
-            <a href="#my_works" class="header__link">Мои проекты</a>
-            <a href="#contact_me" class="header__link">Мои контакты</a>
+            <div class="header__buttons">
+                <button class="header__change_theme header__button">
+                    <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        data-prefix="fas"
+                        data-icon="adjust"
+                        class="svg-inline--fa fa-adjust fa-w-16"
+                        role="img"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"
+                        width="35"
+                        height="35"
+                    >
+                        <path
+                            class="header__change_theme_icon"
+                            fill="currentColor"
+                            d="M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z"
+                        ></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="header__links">
+                <a href="#about" class="header__link">Обо мне</a>
+                <a href="#my_works" class="header__link">Мои проекты</a>
+                <a href="#contact_me" class="header__link">Мои контакты</a>
+            </div>
         </header>
 
         <section class="about" id="about">
@@ -142,13 +166,18 @@
         </section>
 
         <footer class="footer">
-            &copy;&nbsp;Created by&nbsp;Andrey Matanov. Thanks to
-            <a
-                href="https://www.freecodecamp.org/"
-                target="_blank"
-                class="footer__link"
-                >freeCodeCamp</a
-            >
+            <p class="footer__text">
+                &copy;&nbsp;Created by&nbsp;Andrey Matanov. Thanks to&nbsp;
+                <a
+                    href="https://www.freecodecamp.org/"
+                    target="_blank"
+                    class="footer__link"
+                >
+                    freeCodeCamp</a
+                >
+            </p>
         </footer>
+
+        <script src="index.js"></script>
     </body>
 </html>
